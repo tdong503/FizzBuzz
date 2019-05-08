@@ -7,7 +7,7 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            var numbers = InitData();            
+            var numbers = InitData();
 
             foreach (var number in numbers)
             {

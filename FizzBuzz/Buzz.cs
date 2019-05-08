@@ -6,7 +6,12 @@ namespace FizzBuzz
     {
         public static string FormatNumber(int number)
         {
-            return number % 5 == 0 ? "Buzz" : string.Empty;
+            return IsDividedByFive(number) ? "Buzz" : string.Empty;
+        }
+
+        private static bool IsDividedByFive(int number)
+        {
+            return number % 5 == 0;
         }
     }
 }
