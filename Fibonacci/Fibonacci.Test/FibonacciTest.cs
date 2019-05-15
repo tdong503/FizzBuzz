@@ -12,13 +12,11 @@ namespace Fibonacci.Test
         [InlineData(7, 13)]
         [InlineData(8, 21)]
         [InlineData(9, 34)]
-        [InlineData(120, 428607904)]
-        public void FibonacciWhenInputNThenOutputNumber(int number, long result)
+        [InlineData(120, 5.35835925499097E+24 - 2147483648)]
+        public void FibonacciWhenInputNThenOutputNumber(int number, double result)
         {
-            var fibonacci = new Fibonacci();
-            var i = Fibonacci.F(1, 1,number);
-            
-            Assert.Equal(i, result);
+            var actual = Fibonacci.F(1, 1,number);
+            Assert.Equal(actual, result);
         }
     }
 }
