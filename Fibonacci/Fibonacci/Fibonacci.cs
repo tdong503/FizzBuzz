@@ -2,7 +2,7 @@ namespace Fibonacci
 {
     public static class Fibonacci
     {
-        public static double F(double firstNumber, double secondNumber, int figure)
+        public static decimal F(decimal firstNumber, decimal secondNumber, int figure)
         {
             if (figure <= 2)
             {
